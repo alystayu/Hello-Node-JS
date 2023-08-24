@@ -67,6 +67,13 @@ app.post("/bujur_sangkar", (req,res) => {
     res.json(response)
 })
 
+app.get('/get-user', (req,res) => {
+
+    let user = req.body.username
+    
+    res.json(user)
+} )
+
 console.log('tes');
 app.listen(8000, ()=> {
     console.log("server run on port 8000");
